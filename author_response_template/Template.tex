@@ -1,0 +1,79 @@
+\documentclass{ar2rc}
+\setcounter{secnumdepth}{0}  % turn to 1 if you want numbering for sections/subsections
+
+%% Add Title
+\title{magnetosheath jets are super important things}
+\author{Savvas Raptis} % Authors' names
+\journal{journal name} % Journal's name
+\doi{doi} % Provided DOI
+
+
+
+\begin{document}
+
+\maketitle
+
+%%
+% Section = reviewer , subsection = either group of comments or specific comment mentioned by the reviewer.
+%%
+\section{Reviewer \# 2}
+\AR Thank the reviewer for his work and mention which of the submitted manuscripts (tracked changes or not) your pages/lines refers to.
+
+
+\subsection{Major Comments}
+
+\RC Copy paste reviewer's comment that you adress below.
+
+\AR Reply with appropriate citations and arguments, for example \cite{10.3389/fspas.2020.00024,https://doi.org/10.1029/2019JA027754} 
+
+Add the most important changes:
+
+\begin{quotedtext}
+I added \hl{new} results (page XXX line XXX)
+
+\begin{equation}
+    \deleted{x=4+y}
+\end{equation}
+
+\begin{equation}
+    x=5+y
+\end{equation}
+
+\end{quotedtext}
+
+\subsection*{Minor Comments}
+
+\AR Add pseudo-codes or actual scripts if requested:
+
+\begin{minted}
+[
+frame=lines,
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=lightgray,
+fontsize=\footnotesize,
+linenos
+]
+{python}
+import numpy as np
+a = np.array([1, 2, 3])   # Create a rank 1 array
+print(type(a))            # Prints "<class 'numpy.ndarray'>"
+print(a.shape)            # Prints "(3,)"
+print(a[0], a[1], a[2])   # Prints "1 2 3"
+a[0] = 5                  # Change an element of the array
+print(a)                  # Prints "[5, 2, 3]"
+
+b = np.array([[1,2,3],[4,5,6]])    # Create a rank 2 array
+print(b.shape)                     # Prints "(2, 3)"
+print(b[0, 0], b[0, 1], b[1, 0])   # Prints "1 2 4"
+\end{minted}
+
+\subsection*{General Edits}
+
+\AR All general edits were implemented for example: 
+
+page XXX line XXX \replaced{the Earth is round}{the Earth is flat}
+
+\bibliography{ref.bib}
+
+\end{document}

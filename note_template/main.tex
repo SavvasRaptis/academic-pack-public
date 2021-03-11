@@ -1,0 +1,25 @@
+\documentclass[a4paper,twoside]{report}
+\input{preamble}
+
+
+%% Fill the information below for the title page
+\newcommand{\DocumentTitle}{XXXX} %Title  
+\newcommand{\authorName}{Savvas Raptis} % Author's name
+\newcommand{\University}{KTH Royal Institute of Technology} %U niversity
+\newcommand{\Department}{Division of Space and Plasma Physics} % Department
+\newcommand{\contactinfo}{\url{savvra@kth.se} / \url{savvasraptis@gmail.com}} % Contanct information (email, website, phone etc.)
+
+\begin{document}
+
+    \input{title.tex} % adding the title
+    \tableofcontents % adding table of contents
+    
+    % start lectures
+    \input{lectures/lec_1}
+    % stop lectures
+    
+    % Bibliography
+    \clearpage
+    \bibliography{ref} 
+
+\end{document}

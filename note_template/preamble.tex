@@ -1,0 +1,161 @@
+
+%% The actual author of this is Gilles Castel , a fellow KU Leuven student :) 
+
+% His work can be found at the following link: https://castel.dev/  Please support this guy if you like this template or if you get some of his ideas/work as he explains in his site for your own 
+
+
+% PACKAGES 
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+
+% nice fonts
+\usepackage{fontawesome}
+
+%% Generalize fanct header and footer
+\usepackage{fancyhdr}
+\usepackage{changes} %% if needed for track changes
+
+%% For quotes
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+
+%You can use the titlesec package to customize chapters, sections and subsections style in an easy way.
+\usepackage{titlesec}
+
+% Figure/Table and graphic packages
+\usepackage{import}
+\usepackage[normalem]{ulem}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage[labelsep=period, font=small, margin=0.7cm, labelfont={bf}]{caption}
+\usepackage{tikz}
+\usepackage{subfig}
+\graphicspath{{figures/}}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{float}
+
+% Fancy script capitals
+\usepackage{mathrsfs}
+
+% Math related packages
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{bm}
+% si unitx
+\usepackage{siunitx}
+\usepackage{units}
+
+% Todonotes and inline notes in fancy boxes
+\usepackage{todonotes}
+\usepackage{tcolorbox} % more info here https://www.ctan.org/pkg/tcolorbox
+\tcbuselibrary{theorems}
+
+% no intent between paragraphs
+\usepackage{parskip}
+
+% Better package for hyperlinks
+\usepackage{hyperref}
+
+% For customized footnotes (basically used in title page)
+\usepackage{footmisc}
+
+% To add code with premade highlight
+\usepackage{minted}
+
+% To define color
+\usepackage{color}
+\usepackage[makeroom]{cancel}
+
+% For Margin notes
+\usepackage{marginnote}
+
+% For box around Definition, Theorem, \ldots
+\usepackage{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em}
+\theoremstyle{definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BELOW ARE NEW DEFINITION AND NEW COMMANDS
+\definecolor{lightgray}{gray}{0.8}
+\definecolor{lightergray}{gray}{0.92}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% adding Fig. in the beggining of a new figure
+\addto\captionsenglish{\renewcommand{\figurename}{Fig.}}
+
+% HRule used in the title
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% for marginal notes
+\newcommand{\leftsidenote}[1]{\reversemarginpar\marginnote{\scriptsize #1}}
+
+% These are the fancy headers
+\pagestyle{fancy}
+% LE: left even
+% RO: right odd
+% CE, CO: center even, center odd
+% My name for when I print my lecture notes to use for an open book exam.
+% \fancyhead[LE,RO]{Your name}
+
+\fancyhead[RO,LE]{\nouppercase\rightmark} % Right odd,  Left even
+\fancyhead[RE,LO]{}          % Right even, Left odd
+\fancyhead[C]{}          % Right even, Left odd
+
+\fancyfoot[RO,LE]{\thepage}  % Right odd,  Left even
+\fancyfoot[RE,LO]{}          % Right even, Left odd
+\fancyfoot[C]{}     % Center
+
+% Make boxes breakable
+\tcbuselibrary{breakable}
+
+% Enviroments to use if needed in the notes
+\newenvironment{correction}{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=green!60!black,
+    title= Correction,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+% Same as 'correction' but color of box is different
+\newenvironment{note}{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=white!60!black,
+    title= Note,
+    fonttitle=\faCommentingO \; \sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newtcbtheorem[auto counter]{definition}{\faBook \; Definition}%
+{colback=white!5,colframe=green!35!black,fonttitle=\bfseries}{def}
+
+\newtcbtheorem[auto counter]{exercise}{\faPencilSquareO \; Exercise}%
+{colback=white!5,colframe=red!35!black,fonttitle=\bfseries}{ex}
+
+\newtcbtheorem[auto counter]{question}{\faQuestionCircleO \; Question}%
+{colback=white!5,colframe=blue!35!black,fonttitle=\bfseries}{qu}
+
+\newtcbtheorem[auto counter]{sources}{\faLink \; Sources}%
+{colback=white!5,colframe=blue!50!black,fonttitle=\bfseries}{src}
+
+%define my date
+\def\mydate{\leavevmode\hbox{\twodigits\day/\twodigits\month/\the\year}}
+
+% Fix some stuff
+% %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
+\pdfsuppresswarningpagegroup=1
+
+% Bibliography style is set below
+\bibliographystyle{apalike}
+
+% Extras
+\author{Savvas Raptis}
+
+%% The actual author of this work can be found at the following link: https://castel.dev/  Please support this guy if you like this template or if you get some of his ideas/work as he explains in his site for your own 
+
+
