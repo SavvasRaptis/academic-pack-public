@@ -10,6 +10,7 @@ Each folder contains some of the templates (primarely in LaTeX/Overleaf) I am us
 
 * [reviewer_comment_template](reviewer_comment_template): Contains the template I use for reviewing
 
+To use any of these, simply add the content as a project in Overleaf.
 
 ## TODO
 * Add mint in all the cases and copy paste some code as an example
