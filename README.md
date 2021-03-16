@@ -15,7 +15,7 @@ Each folder contains some of the templates (Mainly in LaTeX/Overleaf) I am using
 To use any of these, simply add the content as a project in Overleaf.
 
 ## TODO
-* Add mint in all the cases and copy paste some code as an example
+* ~~Add mint in all the cases and copy paste some code as an example~~
 * Make everything into a LaTeX class
 * Add presentation template for beamer & Power Point
 
