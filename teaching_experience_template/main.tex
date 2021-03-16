@@ -1,0 +1,28 @@
+\documentclass[a4paper,twoside]{report}
+\input{preamble}
+
+
+%% Fill the information below for the title page
+\newcommand{\DocumentTitle}{Teaching Experience} %Title  
+\newcommand{\authorName}{Savvas Raptis} % Author's name
+\newcommand{\University}{KTH Royal Institute of Technology} %U niversity
+\newcommand{\Department}{Division of Space and Plasma Physics} % Department
+\newcommand{\contactinfo}{\url{savvra@kth.se} / \url{savvasraptis@gmail.com}} % Contanct information (email, website, phone etc.)
+\setcounter{secnumdepth}{0}  % turn to 1 if you want numbering for sections/subsections
+\setcounter{tocdepth}{1}
+
+\begin{document}
+
+    \input{title.tex} % adding the title
+    \tableofcontents % adding table of contents
+    \clearpage
+    
+    % start lectures
+    \input{courses/ExampleCourse}
+    % stop lectures
+    
+    % Bibliography
+    \clearpage
+    \bibliography{ref} 
+
+\end{document}
