@@ -19,6 +19,7 @@ To use any of these, simply add the content as a project in Overleaf.
 * Make everything into a LaTeX class
 * Add presentation template for beamer & Power Point
 * Add Poster template
+* Add CV/Resume template
 
 ## Authors
 
