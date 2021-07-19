@@ -12,10 +12,13 @@ Each folder contains some of the templates (Mainly in LaTeX/Overleaf) I am using
 
 * [teaching_experience_template](teaching_experience_template): Contains the template I use for organizing my teaching experience. It can also be used for making short syllabus for the courses you are responsible for.
 
+* [cover_letter](cover_letter): Contains the template I use for cover letters. It's a very simple format with a few details of KTH (current institution). Nothing fancy, with a few adaptations it can be used for any case.
+
 To use any of these, simply add the content as a project in Overleaf.
 
 ## TODO
 * ~~Add mint in all the cases and copy paste some code as an example~~
+* ~~Add cover letter template~~
 * Make everything into a LaTeX class
 * Add presentation template for beamer & Power Point
 * Add Poster template
@@ -28,4 +31,4 @@ To use any of these, simply add the content as a project in Overleaf.
 ## Acknowledgments
 The template for note taking is basically a modified/simplified version taken from [CASTEL](https://castel.dev/). If you want even more advanced work visit his website. For information on how to optimize your note taking routine during courses/workshops, read the articles on his website.
 
-The template for the reviewer and author replies are based on the work of [github-mschroen](https://github.com/mschroen/review_response_letter). I added a few extra things that I prefered and I removed a couple that I didn't find useful. If you prefer to use markdown rather than LaTeX for your replies check his github page.
+The template for the reviewer and author replies are based on the work of [github-mschroen](https://github.com/mschroen/review_response_letter). I added a few extra things that I preferred and I removed a couple that I didn't find useful. If you prefer to use markdown rather than LaTeX for your replies check his GitHub page.

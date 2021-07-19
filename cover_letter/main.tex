@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font for the document text
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr,graphicx}
+\usepackage{amsmath} 
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{graphicx} 
+\usepackage{lmodern} 
+\usepackage[export]{adjustbox}
+\usepackage{setspace}
+\onehalfspacing
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{1pt}%
+  \fancyfoot[CE,CO]{\small{KTH, Royal Institute of Technology – Brinellvägen 8; 114 28 Stockholm; Sweden. Phone: +46 8 790 60 00. Fax: +46 8 790 65 00. Pg: 1 56 53-9. Bg: 895-9223. VAT registration No: SE202100305401.}}
+  % Add more detail here if needed
+}
+\fancypagestyle{otherpages}{%
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{1pt}%
+  \renewcommand{\footrulewidth}{1pt}%
+  % Add more detail here if needed
+}
+
+
+
+\AtBeginDocument{\thispagestyle{firstpage}}
+\pagestyle{otherpages}
+
+\setlength{\parindent}{1pt}
+\setlength{\parskip}{3.ex}
+
+\begin{document}
+
+\vspace*{\dimexpr-\headsep-\headheight-1pt}
+
+%\includegraphics[width=1.in]{Kth_logo.svg_.png}
+
+\noindent \includegraphics[scale=0.07, valign=b]{Kth_logo.svg_.png} \hfill
+\begin{tabular}[b]{@{}r@{}}
+  \today \\[12pt] % Date
+  SPP, EECS \\
+  Teknikringen 31, 11428 \\ % Address
+  Stockholm, Sweden
+\end{tabular}
+
+\rule{\linewidth}{1pt}
+
+\bigskip
+
+Dear ,
+
+\bigskip
+\setlength{\parskip}{0.5ex}
+
+Kind Regards,
+
+\medskip
+
+Name
+
+\end{document}

@@ -87,7 +87,7 @@
 
 %% Define that \RC and \AR should start and format the whole paragraph 
 \RequirePackage{suffix}
-\long\def\RC#1\par{\makebox[0pt][r]{\bf RC:\hspace{4mm}}{\textit{#1}}\par} %\RC
+\long\def\RC#1\par{\makebox[0pt][r]{\bf RC:\hspace{4mm}}{{#1}}\par} %\RC
 \WithSuffix\long\def\RC*#1\par{\textbf{\textit{#1}}\par} %\RC*
 \long\def\AR#1\par{\makebox[0pt][r]{AR:\hspace{10pt}}#1\par} %\AR
 \WithSuffix\long\def\AR*#1\par{#1\par} %\AR*
